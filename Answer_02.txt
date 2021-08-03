@@ -1,0 +1,12 @@
+create external table data_02 (prev string, curr string, types string, pair int)
+row format delimited
+fields terminated by '\t'
+stored as textfile
+location "/user/raj_ops/data_02";
+
+--------------------------------------------------------------------
+select prev, sum(pair) as visits from data_02
+where types = "link" 
+group by prev
+order by visits desc
+limit 20;
