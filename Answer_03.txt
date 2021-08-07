@@ -1,1 +1,0 @@
-select prev, sum(pair) as visit from data_02 where prev regexp "Hotel_California" and types = "link" group by prev order by visit desc limit 10;
