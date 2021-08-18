@@ -1,7 +1,7 @@
 -- Creating a database for the project
 CREATE DATABASE project1
 
--- Selecting the database
+-- Selecting the database 
 use project1;
 
 -- Create a table to upload the data from the files
